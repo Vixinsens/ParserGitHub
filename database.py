@@ -23,12 +23,12 @@ class DataBase:
     def insert_many(self, elements):
         self.collection.insert_many(elements)
 
-database = DataBase(
-    host='localhost',
-    port=27017,
-    db='test',
-    collection='users')
-#database.insert_one({'name': 'Alice', 'age': 40})
-#database.insert_many([{'name': 'Fred', 'age':11}, {'name':'Alex', 'age':21}])
-database.find_all()
-database.find_by_name('Alice')
+##database = DataBase(
+#    host='localhost',
+#    port=27017,
+#    db='test',
+#    collection='users')
+##database.insert_one({'name': 'Alice', 'age': 40})
+##database.insert_many([{'name': 'Fred', 'age':11}, {'name':'Alex', 'age':21}])
+#database.find_all()
+#database.find_by_name('Alice')
