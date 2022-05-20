@@ -15,6 +15,7 @@ class DataBase:
     def find_by_name(self, name):
         for element in self.collection.find({'name': name}):
             print(element['name'], element['age'])
+            return [element for element in self.collection.find({'name': name})]
 
 
     def insert_one(self, element):
